@@ -1,0 +1,177 @@
+*/  DISEÑO INDEX*/ 
+
+#main-inicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkred;
+
+}
+
+
+#imagenes-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "imagen-main-1 imagen-main-2 imagen-main-3 imagen-main-4"; 
+}
+
+.imagenesmain img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-main-1 {
+    grid-area: imagen-main-1;
+}
+
+.imagen-main-2 {
+    grid-area: imagen-main-2;    
+}
+
+.imagen-main-3 {
+    grid-area: imagen-main-3;    
+}
+
+.imagen-main-4 {
+    grid-area: imagen-main-4;    
+}
+
+@media (max-width: 600px) {
+    #imagenes-main {
+        grid-template-areas: 
+        "imagen-main-1 imagen-main-2"
+        "imagen-main-3 imagen-main-4";
+    }
+}
+
+#header-inicio {
+    background-image:url("/images/pinchos.jpg");
+    background-size: 1440px 300px;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+}
+
+.logo-proyectoasado-inicio img{
+    height: 100px;
+    width: 100px;
+}
+
+.menu-inicio {
+    min-width: 100vh;
+    text-align: center;   
+    font-size: xx-large;
+}
+
+.menu-inicio a {
+    color: white;
+}
+
+.menu-inicio a:hover {
+    color: darkred;
+    font-size: 33px;
+    transition: 1s;
+}
+
+.bienvenida {
+    text-align: center;
+    background-color: darkred;
+}
+
+#logos-footer img {
+    width: 50px;
+    height: 50x;
+    display: flex;
+    align-content: center;
+}
+
+.logosfooterinicio img{
+    align-content: RIGHT    ;
+}
+
+
+
+/*DISEÑO NUESTROS SERVICIOS*/ 
+
+#header-nuestros-servicios {
+    background-color: black;
+}
+
+.header-nuestros-servicios {
+    color: white;
+    text-align: center;
+}
+
+#main-nuestros-servicios {
+    background-color: darkred;
+    display: flex;
+}
+
+.catering-nuestros-servicios {
+    text-align: center;
+    color: white;
+}
+
+.sesiones-nuestros-servicios {
+    text-align: center;
+    color: white;
+    
+}
+
+#footer-nuestros-servicios {
+    background-color: darkred;
+    display: flex;
+}
+
+.imagenes-catering-nuestros-servicios {
+    background-color: darkred;
+    display: flex;
+    margin: 30px;
+    overflow: auto;
+    width: 140vh;
+    height: 50vh;
+}
+
+.imagenes-catering-nuestros-servicios img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.imagenes-sesiones-nuestros-servicios {
+    background-color: darkred;
+    display: flex;
+    margin: 30px;
+    overflow: auto;
+    width: 140vh;
+    height: 50vh;
+}
+
+.imagenes-sesiones-nuestros-servicios img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+
+/*DISEÑO CULTURA DEL ASADO*/
+
+#header-cultura-del-asado {
+    background-color: black;
+}
+
+.header-cultura-del-asado {
+    color: white;
+    text-align: center;
+}
+
+.que-es-el-asado {
+    text-align: left;
+    color: white;
+}
+
+/*DISEÑO NOSOTROS*/
